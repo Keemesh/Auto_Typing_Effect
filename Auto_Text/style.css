@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0, 0.6);
+}
+
+.hero-text .para {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.hero-text p {
+   color: #f4f4f4;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-top: 10px;
+}
+
+.btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #14bdeb;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.05);
+    /* background: #0e93b8; */
+}
+
+.hero-text .para span {
+    color: #14bdeb;
+}
+
+@media (max-width: 980px) {
+    .hero-text .para {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 180px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text .para {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .hero-text p {
+        width: 85%;
+    }
+
+    .btn {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+}
